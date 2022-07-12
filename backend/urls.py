@@ -30,4 +30,3 @@ urlpatterns = [
     path('order', OrderView.as_view(), name='order'),
     path('', include(router.urls)),
 ]
-

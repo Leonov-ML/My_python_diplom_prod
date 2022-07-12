@@ -196,4 +196,3 @@ class ApiTests(APITestCase):
         self.assertNotIn('Errors', response.data)
         self.assertIn('Status', response.data)
         self.assertEqual(response.data['Status'], True)
-

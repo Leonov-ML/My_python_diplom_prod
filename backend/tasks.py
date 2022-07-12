@@ -78,13 +78,6 @@ def new_order_task(user_id, **kwargs):
     )
     msg.send()
 
-
-# def open_file(shop_data):
-#     with open(shop_data.get_file(), 'r') as f:
-#         data = yaml.safe_load(f)
-#     return data
-
-
 @celery_app.task()
 def do_import_task(partner_id, url):
     """
